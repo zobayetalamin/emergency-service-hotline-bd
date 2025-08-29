@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Emergency Service Hotline</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+
+<body class="bg-white">
+    <!-- nav bar section -->
+    <nav class="flex flex-col md:flex-row justify-between items-center lg:w-[1250px] mx-auto p-3">
+        <div class="flex justify-center items-center gap-2">
+            <img class="w-[40px] " src="./assets/logo.png" alt="">
+            <h3 class="text-[#006747] font-bold text-xl lg:text-2xl">Emergency Service</h3>
+        </div>
+        <div class="flex items-center space-x-2 md:space-x-4
+        gap-2">
+            <div class="flex items-center gap-2 ">
+                <p id="" class="text-[#000000] font-semibold text-xl">0</p>
+                <img class="w-[23px] h-[23px] lg:w-[31px] lg:h-[31px]" src="./assets/heart.png" alt="">
+            </div>
+            <div class="flex items-center bg-gray-100 rounded-full px-3py-1 space-x-1">
+            <p class="text-[#000000] font-semibold text-xl gap-2">100</p>
+            <img class="w-[23px] h-[23px] lg:w-[31px] lg:h-[31px]" src="./assets/coin.png" alt="">
+            </div>
+            <button class="copy-btn bg-[#00A63E] text-white font-semibold rounded-full px-4 py-2">0 Copy</button>
+        </div>
+    </nav>
+    <!-- header section  -->
+    <header>
+        <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white p-6 md:p-12 flex flex-col items-center justify-center text-center">
+        
+        <img src="./assets/logo-dark.png" alt="Bangladesh Government Logo" class="w-20 md:w-28 mb-4">
+        
+        <h2 class="text-2xl md:text-3xl font-bold mb-2">জরুরি সেবা ডিরেক্টরি</h2>
+        
+        <p class="text-sm md:text-base font-semibold ">
+            Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh
+        </p>
+    </div>
+    </header>
+    <!-- emergency hotline section -->
+    <section class="flex flex-col md:flex-row justify-between items-center lg:w-[1250px] mx-auto p-3">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white rounded-xl">
+                <div class="flex justify-between">
+                    <img class="w-[32px]" src="./assets/emergency.png" alt="">
+                </div>
+                <h1 class="font-bold mt-3">জাতীয় জরুরি সেবা</h1>
+                <p>National Emergency</p>
+                <h1>999</h1>
+                <div class=""><p class="">সার্বজনীন</p></div>
+                <div class="flex">
+                    <button>Copy</button>
+                </div>
+                <div>
+                    <button>Call</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
     
 </body>
+
 </html>
